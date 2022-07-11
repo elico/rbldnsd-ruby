@@ -5,3 +5,5 @@ source "https://rubygems.org"
 gem 'rubydns', '~>1.0.3'
 gem 'json'
 gem 'nio4r'
+gem 'mysql2'
+gem 'bigdecimal'

@@ -6,9 +6,12 @@ install:
 	mkdir -p /var/rbldnsd/db
 	cp -v {rbldnsd.rb,load-lists.rb} /usr/local/rbldnsd-rb/
 
+
 install-dependencies:
 	dnf install -y ruby ruby-devel rubygem-json
 	dnf group install -y "Development Tools"
+	dnf module enable mariadb:10.5 -y
+	dnf install mariadb-devel mariadb
 	gem install bundler
 	bundle install
 
