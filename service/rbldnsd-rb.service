@@ -1,0 +1,13 @@
+[Unit]
+Description=rbldnsd ruby
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/usr/bin/env ruby /usr/local/rbldnsd-rb/rbldnsd.rb
+
+[Install]
+WantedBy=multi-user.target
