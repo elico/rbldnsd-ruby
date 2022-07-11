@@ -23,3 +23,11 @@ start: start-service
 start-service:
 	systemctl daemon-reload
 	systemctl start rbldnsd-rb.service
+
+stop: stop-service
+
+stop-service:
+	systemctl daemon-reload
+	systemctl stop rbldnsd-rb.service
+
+restart: stop start

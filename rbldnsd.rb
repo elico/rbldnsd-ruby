@@ -23,8 +23,8 @@ def domainToQueryArr(domain)
 end
 
 INTERFACES = [
-  [:udp, '0.0.0.0', 53],
-  [:tcp, '0.0.0.0', 53]
+  [:udp, '0.0.0.0', 10053],
+  [:tcp, '0.0.0.0', 10053]
 ]
 
 IN = Resolv::DNS::Resource::IN
